@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090e16">
+  <meta name="description" content="Fractured — a Discord utility bot in the making. Explore the concept and its interactive command preview.">
+  <title>Fractured — Coming Soon</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="noise-layer" aria-hidden="true"></div>
+  <div class="top-progress" aria-hidden="true" id="scrollProgress"></div>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand-lockup" href="#top" aria-label="Fractured, back to top">
+        <span class="brand-icon"><img src="assets/fractured-logo.png" alt="" /></span>
+        <span class="brand-type">FRACTURED<span class="brand-subline">DISCORD UTILITIES</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#overview" class="nav-link active">Overview</a>
+        <a href="#capabilities" class="nav-link">What's planned</a>
+        <a href="#playground" class="nav-link">Try the concept</a>
+      </nav>
+      <div class="header-actions">
+        <span class="build-label"><span class="pulse-dot" aria-hidden="true"></span> IN DEVELOPMENT</span>
+        <button class="shortcut-key" type="button" id="openPalette" aria-label="Open quick navigation"><span>CTRL</span><span>K</span></button>
+        <button class="mobile-menu-toggle" type="button" id="mobileMenuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" hidden>
+      <a href="#overview">Overview</a>
+      <a href="#capabilities">What's planned</a>
+      <a href="#playground">Try the concept</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero page-grid" id="overview" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-num">[ 001 ]</span> <span>INTRODUCING FRACTURED</span><span class="eyebrow-line"></span></div>
+        <h1 id="heroTitle">A better way<br>to <em>run things.</em></h1>
+        <p class="hero-description">Meet Fractured. A Discord utility bot in the making, designed to bring the tools you need together, without the clutter.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#playground"><span>TRY THE INTERACTIVE PREVIEW</span><span class="arrow-mark" aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#capabilities">See what we're building <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-micro"><span class="micro-line"></span><span>ONE BOT. THE ESSENTIALS, DONE RIGHT.</span></div>
+      </div>
+      <div class="hero-visual" id="logoStage">
+        <div class="stage-top"><span>VISUAL IDENTITY / 001</span><span class="live-chip"><span class="small-dot"></span> ORIGINAL MARK</span></div>
+        <div class="stage-center">
+          <div class="stage-cross stage-cross-tl">+</div><div class="stage-cross stage-cross-tr">+</div>
+          <div class="stage-cross stage-cross-bl">+</div><div class="stage-cross stage-cross-br">+</div>
+          <div class="stage-outline outline-a"></div><div class="stage-outline outline-b"></div>
+          <img src="assets/fractured-logo.png" class="hero-logo" alt="Fractured's original white distressed geometric logo" draggable="false">
+        </div>
+        <div class="stage-bottom"><span>FRACTURED / UTILITY SYSTEMS</span><span>EST. 2026</span></div>
+      </div>
+      <div class="hero-strip"><span>BUILT FOR DISCORD COMMUNITIES</span><span class="hero-strip-center" aria-hidden="true">/ / / / / / / /</span><a href="#playground">SCROLL TO EXPLORE <span>↓</span></a></div>
+    </section>
+
+    <section class="feature-section section-wrap" id="capabilities" aria-labelledby="capTitle">
+      <div class="section-intro">
+        <div class="section-kicker"><span class="kicker-index">02 /</span> THE ROADMAP</div>
+        <div class="section-title-block">
+          <h2 id="capTitle">The little things<br><span>make the difference.</span></h2>
+          <p>We're focusing on the tools server teams reach for every day. Here's a look at the direction we're taking.</p>
+        </div>
+      </div>
+      <div class="feature-rows">
+        <article class="feature-row" tabindex="0">
+          <div class="feature-count">01<span class="feature-count-slash">/04</span></div>
+          <div class="feature-main"><span class="feature-category">SERVER MANAGEMENT</span><h3>Moderation, without the mess.</h3><p>Useful commands for helping teams keep a community organised and under control.</p></div>
+          <div class="feature-visual"><span class="mono-doodle">/warn<span class="blink-cursor">_</span></span><span class="feature-status">ON THE ROADMAP</span></div>
+          <div class="feature-plus" aria-hidden="true">↗</div>
+        </article>
+        <article class="feature-row" tabindex="0">
+          <div class="feature-count">02<span class="feature-count-slash">/04</span></div>
+          <div class="feature-main"><span class="feature-category">EVERYDAY TOOLS</span><h3>All your essentials, in one place.</h3><p>Helpful utilities, quick actions, and fewer tabs to juggle when you're busy.</p></div>
+          <div class="feature-visual"><span class="mono-doodle">/poll<span class="blink-cursor">_</span></span><span class="feature-status">ON THE ROADMAP</span></div>
+          <div class="feature-plus" aria-hidden="true">↗</div>
+        </article>
+        <article class="feature-row" tabindex="0">
+          <div class="feature-count">03<span class="feature-count-slash">/04</span></div>
+          <div class="feature-main"><span class="feature-category">SMARTER WORKFLOWS</span><h3>Spend less time on repeat.</h3><p>Exploring ways to make recurring tasks simpler and the day-to-day a bit smoother.</p></div>
+          <div class="feature-visual"><span class="mono-doodle">/remind<span class="blink-cursor">_</span></span><span class="feature-status">ON THE ROADMAP</span></div>
+          <div class="feature-plus" aria-hidden="true">↗</div>
+        </article>
+        <article class="feature-row" tabindex="0">
+          <div class="feature-count">04<span class="feature-count-slash">/04</span></div>
+          <div class="feature-main"><span class="feature-category">THE EXPERIENCE</span><h3>Simple where it matters.</h3><p>A considered interface that keeps the important stuff front and centre.</p></div>
+          <div class="feature-visual"><span class="mono-doodle">[ / ]</span><span class="feature-status">IN PROGRESS</span></div>
+          <div class="feature-plus" aria-hidden="true">↗</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="demo-section section-wrap" id="playground" aria-labelledby="demoTitle">
+      <div class="section-intro demo-intro">
+        <div class="section-kicker"><span class="kicker-index">03 /</span> INTERACTIVE PREVIEW</div>
+        <div class="section-title-block">
+          <h2 id="demoTitle">Don't just read it.<br><span>Give it a go.</span></h2>
+          <p>Choose a command, edit its details and see how it could work. Everything here runs as a simulation in your browser.</p>
+        </div>
+      </div>
+      <div class="playground-window">
+        <div class="window-bar"><div class="window-bar-left"><span class="window-diamond"></span><span>FRACTURED CONCEPT LAB</span><span class="bar-divider">/</span><span class="text-dim">COMMAND PREVIEW</span></div><span class="window-notice"><span class="pulse-dot"></span> LOCAL DEMO · NO BOT CONNECTED</span></div>
+        <div class="playground-layout">
+          <aside class="command-sidebar" aria-label="Example commands">
+            <div class="command-sidebar-title">SELECT AN ACTION <span>04 AVAILABLE</span></div>
+            <div class="command-list" id="commandList">
+              <button class="command-item is-selected" type="button" data-command="warn"><span class="command-number">01</span><span class="command-name">/warn</span><span class="command-arrow">↗</span></button>
+              <button class="command-item" type="button" data-command="poll"><span class="command-number">02</span><span class="command-name">/poll</span><span class="command-arrow">↗</span></button>
+              <button class="command-item" type="button" data-command="clear"><span class="command-number">03</span><span class="command-name">/clear</span><span class="command-arrow">↗</span></button>
+              <button class="command-item" type="button" data-command="remind"><span class="command-number">04</span><span class="command-name">/remind</span><span class="command-arrow">↗</span></button>
+            </div>
+            <div class="sidebar-bottom"><span class="sidebar-asterisk">✳</span> THIS IS A PREVIEW OF IDEAS, NOT A LIVE SERVICE.</div>
+          </aside>
+          <div class="command-workspace">
+            <div class="workspace-meta"><span id="commandCategory">MODERATION / WARN</span><span class="workspace-counter" id="commandCounter">EXAMPLE 01 — 04</span></div>
+            <div class="workspace-header"><h3 id="commandTitle">Warn a member.</h3><p id="commandDescription">Give a member a warning with a reason attached.</p></div>
+            <form id="demoForm" class="demo-form">
+              <div id="demoFields" class="demo-fields"><label class="field"><span>MEMBER</span><input name="member" type="text" value="@alex" autocomplete="off" maxlength="40" aria-label="Member"></label><label class="field"><span>REASON</span><input name="reason" type="text" value="Spamming in general" autocomplete="off" maxlength="100" aria-label="Reason"></label></div>
+              <div class="terminal-bar"><div class="terminal-command" id="commandPreview">/warn user:@alex reason:"Spamming in general"</div><button class="copy-button" type="button" id="copyCommand" aria-label="Copy command">COPY <span aria-hidden="true">↗</span></button></div>
+              <div class="demo-actions"><button type="submit" class="btn btn-demo" id="runDemo"><span class="play-icon" aria-hidden="true">▶</span> RUN SIMULATION</button><span>PREVIEW ONLY · NOTHING IS SENT TO DISCORD</span></div>
+            </form>
+            <div class="demo-output" id="demoOutput" role="status" aria-live="polite"><div class="output-label"><span>OUTPUT</span><span>READY</span></div><p>Select a command and hit <strong>Run simulation</strong> to see a sample response.</p></div>
+          </div>
+        </div>
+        <div class="window-bottom"><span><span class="tiny-square"></span> INTERACTIONS ARE CLIENT-SIDE ONLY</span><span>FRACTURED // PREVIEW BUILD 01</span></div>
+      </div>
+      <div class="demo-hint"><span><kbd>CTRL</kbd> + <kbd>K</kbd> TO JUMP AROUND THE SITE</span><span>ESC TO CLOSE MENUS</span></div>
+    </section>
+
+    <section class="closing-section section-wrap" id="closing">
+      <div class="closing-upper"><span>04 / WHAT'S NEXT</span><span>STAY IN THE LOOP</span></div>
+      <div class="closing-grid"><div><p class="closing-pretitle">THIS IS ONLY THE BEGINNING.</p><h2>Something useful<br>is <em>taking shape.</em></h2></div><div class="closing-aside"><p>Fractured is in development. There's no release date to announce just yet — but this is where it starts.</p><a href="#top" class="closing-button">BACK TO TOP <span aria-hidden="true">↑</span></a></div></div>
+      <div class="closing-logo-area"><img src="assets/fractured-logo.png" alt="" loading="lazy" /><span>FRACTURED</span></div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>© <span id="year"></span> FRACTURED. CONCEPT WEBSITE.</span><span>CRAFTED FOR WHAT COMES NEXT.</span><button type="button" id="footerShortcuts" aria-label="Open quick navigation">SHORTCUTS <kbd>⌘ K</kbd></button></footer>
+
+  <div class="palette-overlay" id="paletteOverlay" hidden>
+    <div class="palette-backdrop" data-close-palette></div>
+    <section class="palette-dialog" role="dialog" aria-modal="true" aria-labelledby="paletteTitle">
+      <div class="palette-search"><span class="search-icon" aria-hidden="true">⌕</span><label id="paletteTitle" class="sr-only" for="paletteInput">Search pages and demo commands</label><input id="paletteInput" type="search" placeholder="Where to? Try ‘moderation’..." autocomplete="off" spellcheck="false" /><kbd>ESC</kbd></div>
+      <div class="palette-results" id="paletteResults"></div>
+      <div class="palette-footer"><span>↵ TO OPEN</span><span>FRACTURED QUICK NAV</span></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
